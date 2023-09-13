@@ -16,3 +16,98 @@ section {
 #gallery .row > * {
   padding: 0;
 }
+
+/* My Hobby */
+.hobby-box {
+  position: relative;
+  background-color: #129d00;
+  border-radius: 10px;
+  height: 500px;
+  overflow: hidden;
+}
+
+.hobby-box::before {
+  content: "MY";
+  position: absolute;
+  color: #fff;
+  font-size: 6em;
+  font-weight: bold;
+  font-style: italic;
+  top: 30px;
+  left: -100%;
+  transform: translate(-50%, 0);
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.hobby-box:hover::before {
+  left: 50%;
+  transform: translate(-50%, 0);
+  opacity: 0.2;
+}
+
+.hobby-box::after {
+  content: "HOBBY";
+  position: absolute;
+  color: #fff;
+  font-size: 4.3em;
+  font-weight: bold;
+  font-style: italic;
+  top: 350px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.hobby-box:hover::after {
+  left: 50%;
+  transform: translate(-50%, 0);
+  opacity: 0.2;
+}
+
+.hobby-name {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  color: #fff;
+  text-align: center;
+  font-size: 2em;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.hobby-boxL:hover .hobby-name {
+  top: 20px;
+  opacity: 1;
+}
+
+.hobby-detail-button {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.hobby-box:hover .hobby-detail-button {
+  opacity: 1;
+  bottom: 20px;
+}
+
+.hobby-img {
+  position: absolute;
+  top: 52%;
+  left: 50%;
+  transform: translate(-50%, -52%);
+  max-width: 350px;
+  transition: 0.5s;
+}
+
+.hobby-box:hover .hobby-img {
+  transform: translate(-50%, -52%) rotate(5deg) scale(1.2);
+}
+
+
+
