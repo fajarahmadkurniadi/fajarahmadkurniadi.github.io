@@ -101,7 +101,7 @@ section {
   top: 52%;
   left: 50%;
   transform: translate(-50%, -52%);
-  max-width: 350px;
+  max-width: 100%;
   transition: 0.5s;
 }
 
