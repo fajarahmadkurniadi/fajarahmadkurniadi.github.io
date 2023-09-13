@@ -18,6 +18,11 @@ section {
 }
 
 /* My Hobby */
+
+.My-Hobby {
+  color: #fff;
+} 
+
 .hobby-box {
   position: relative;
   background-color: #129d00;
@@ -101,7 +106,7 @@ section {
   top: 52%;
   left: 50%;
   transform: translate(-50%, -52%);
-  max-width: 100%;
+  max-width: 40%;
   transition: 0.5s;
 }
 
