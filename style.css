@@ -54,7 +54,7 @@ section {
   font-weight: bold;
   font-style: italic;
   top: 350px;
-  left: 50%;
+  left: 450px;
   transform: translate(-50%, 0);
   opacity: 0;
   transition: 0.5s;
@@ -77,7 +77,7 @@ section {
   transition: 0.5s;
 }
 
-.hobby-boxL:hover .hobby-name {
+.hobby-box:hover .hobby-name {
   top: 20px;
   opacity: 1;
 }
