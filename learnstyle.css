@@ -1,0 +1,163 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #141414;
+    color: #ffff;
+}
+
+#header {
+    background-image: url(img/learnbg.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: fit-content;
+}
+
+.header-top {
+    display: flex;
+    width: 100%;
+    height: 10%;
+}
+
+.header-top h3 {
+    margin: 40px 0 0 40px;
+    width: 148px;
+    transition: 0.3s;
+}
+
+.header-top h3:hover {
+    transform: translateY(-10px);
+}
+
+.header-top h3:active {
+    transform: translateY(0px);
+}
+
+.header-top h3 a {
+    text-decoration: none;
+    color: white;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 15px;
+    /* border: 2px solid #ff0000; */
+    padding: 15px 40px;
+    background-color: #353535;
+    border-radius: 30px;
+    box-shadow: 0px 3px 7px #000000;
+    transition: 0.3s ease-out;
+}
+
+.header-top h3 a:hover {
+    background-color: #FF4C00;
+    box-shadow: 0px 10px 3px #000000;
+}
+
+.header-top h3 a:active {
+    box-shadow: 0px 0px 0px #0000;
+}
+
+.container {
+    padding: 40px 40px;
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+}
+
+.header-main {
+    width: 100%;
+    height: fit-content;
+    padding: 50px;
+    background: #353535;
+    border-radius: 50px;
+    background-color: rgba(53, 53, 53, 0.5);
+}
+
+.header-main img {
+    width: 100%;
+    max-width: 700px;
+    float: left;
+}
+
+.img-desc {
+    color: #FFFFFF;
+}
+
+.img-desc h1 {
+    font-size: 45px;
+}
+
+.img-desc p {
+    font-size: 16px;
+    color: #b9b9b9;
+    text-align: justify;
+}
+
+.containertwo {
+    display: block;
+    padding: 0 90px;
+    margin-bottom: 50px;
+}
+
+.containertwo img {
+    width: 100%;
+    max-width: 200px;
+    border: #343434 solid 7px;
+    border-radius: 100px;
+    transition: 0.3s;
+}
+
+.containertwo img:hover {
+    transform: scale(1.05);
+    border-radius: 5px;
+}
+
+.containertwo h3 {
+    font-style: italic;
+}
+
+.containertwo h4 {
+    color: #FF4C00;
+    font-style: italic;
+}
+
+
+/* ----------------- Tablet Mode ----------------- */
+@media screen and (max-width: 1118px) {
+
+    .header-main img {
+        width: 100%;
+        max-width: 700px;
+        min-width: 200px;
+        float: left;
+    }
+
+    .img-desc h1 {
+        font-size: 30px;
+    }
+
+    .img-desc p {
+        font-size: 13px;
+        color: #b9b9b9;
+        text-align: justify;
+    }
+
+    .containertwo h3 {
+        font-style: italic;
+        font-size: 15px;
+    }
+
+    .containertwo h4 {
+        color: #FF4C00;
+        font-style: italic;
+        font-size: 13px;
+    }
+
+}

@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <link rel="icon" type="img/png" href="img/icon.png">
+    <title>Fajar Ahmad Kurniadi</title>
+</head>
+<body>
+
+<div class="onebackground">
+    <!-- ------- Header ------- -->
+
+    <div id="header">
+        <div class="header-container">
+            <nav>
+                <img data-aos="fade-right" data-aos-anchor-placement="top-center" data-aos-delay="200" src="img\logo.png" class="logo">
+                <img data-aos="fade-right" data-aos-anchor-placement="top-center" data-aos-delay="200" src="img/phone-logo.png" class="phone-logo">
+                <ul id="sidemenu">
+                    <li data-aos="fade-down" data-aos-anchor-placement="top-center" class="header-navbar"><a href="#header">Home</a></li>
+                    <li data-aos="fade-down" data-aos-anchor-placement="top-center" data-aos-delay="200"><a href="#about">About</a></li>
+                    <li data-aos="fade-down" data-aos-anchor-placement="top-center" data-aos-delay="400"><a href="#services">Services</a></li>
+                    <li data-aos="fade-down" data-aos-anchor-placement="top-center" data-aos-delay="600"><a href="#portfolio">Portfolio</a></li>
+                    <li data-aos="fade-down" data-aos-anchor-placement="top-center" data-aos-delay="800"><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i data-aos="fade-left" data-aos-anchor-placement="top-center" data-aos-delay="200" class="fa-solid fa-bars" style="font-size: 30px; cursor: pointer;" onclick="openmenu()"></i>
+            </nav>
+            <div class="headertext">
+                <div class="header-text">
+                    <h1 data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-delay="200">Hello, I'm <span>Fajar</span><br>from Indonesia</h1>
+                    <p data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-delay="400">Full-Stack Web <span>Developer</span></p>
+                    <div class="justfit" style="height: fit-content; width: fit-content;" data-aos="fade-right" data-aos-delay="600">
+                        <p class="about-me"><a href="#about">About Me</a></p>
+                    </div>
+                </div>
+                <div class="header-textdua">
+                    <h1 data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-delay="200">What is Full-Stack<br>Web Developer?</h1>
+                    <p data-aos="fade-up" data-aos-delay="400"><a href="learn.html">Learn More</a></p>
+                </div>
+            </div>
+            <div class="sosmed">
+                <div class="sosmed-container">
+                    <ul>
+                        <li data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-delay="200"><a href="https://www.instagram.com/fajarakurniadi?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><i class="fa-brands fa-instagram"></i></a></li>
+                        <li data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-delay="400"><a href="https://www.linkedin.com/in/fajar-ahmad-kurniadi/"><i class="fa-brands fa-linkedin"></i></a></li>
+                        <li data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-delay="600"><a href="mailto:fajarsigmachad@gmail.com"><i class="fa-solid fa-envelope"></i></a></li>
+                        <li data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-delay="800"><a href="https://github.com/fajarahmadkurniadi"><i class="fa-brands fa-github"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+<!-- ------- About ------- -->
+
+    <div id="about">
+        <div class="about-container">
+            <div class="about-row">
+                <div data-aos="fade-right" data-aos-anchor-placement="top-bottom" class="about-col-1">
+                    <img src="img\fajar-2-copy.png">
+                </div>
+                <div data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-delay="100" class="about-col-2">
+                    <h1>About Me</h1>
+                    <p>Fajar Ahmad Kurniadi, that's my name. a Computer Science or what we usually call Informatics Engineering graduate from the University of North Sumatra, is an accomplished Full-Stack Web Developer known for his commitment to delivering cutting-edge digital solutions. With a solid academic foundation, I combines creativity and technical expertise to excel in various projects, consistently exceeding expectations. My remarkable track record demonstrates my ability to thrive on innovation and precision.</p>
+
+                    <div class="tab-titles">
+                        <div class="tab-links active-link" onclick="opentab('skills')">Hobby</div>
+                        <div class="tab-links" onclick="opentab('experience')">Experience</div>
+                        <div class="tab-links" onclick="opentab('education')">Education</div>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Sports</span><br>Sports are my ultimate joy and vitality. From cycling, jogging, and swimming to badminton, basketball, football, futsal, and table/court tennis, each sport brings a unique thrill. Whether it's the rhythmic pedal strokes, swift movements, or the camaraderie of team sports, I find delight in every form of physical activity. My diverse range of sports experiences continues to make my journey in sports an ever-enriching adventure.</li>
+                            <li><span>Workout</span><br>Just like sports, Workout is something that I love. With these two hobbies that give me endorphins, I don't need dopamine to calm myself down and make myself happy like my friends do. My workout is divided into two at the gym (with tools) and at home (without tools). This is enough to make me healthier and fitter and make my body become more athletic and cool which is where my body is formed this is a symbol of how disciplined I am.</li>
+                            <li><span>Traveling</span><br>Travelling is an adventure to unique natural beauty, refreshing the body and rejuvenating the soul. Every step of the journey brings unforgettable pleasure from different places and is synonymous with natural wonders.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2022 - Current</span><br>Google Developer Student Clubs (GDSC) - University of North Sumatra</li>
+                            <li><span>2023 - 2024</span><br>Association of Information Technology Students (HIMTI), Communication and Information Technology Division</li>
+                            <li><span>2023 - Current</span><br>Coding Studio collecting online certificates</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2019 - 2022</span><br>Madrasah Aliyah Negeri 1 Medan</li>
+                            <li><span>2022 - Current</span><br>Diploma 3 Informatics Engineering - University of North Sumatra</li>
+                            <li><span>2023 - Current</span><br>Coding Studio online course</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ------- Services ------- -->
+
+<div id="services">
+    <div class="container-services">
+        <h1 data-aos="fade-right" data-aos-delay="200" class="sub-title">My Services</h1>
+        <div data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-delay="300" class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Design</h2>
+                <p>Web design blends artistry and technical skills to create visually appealing, user-friendly websites. Designers prioritize functionality, navigation, and responsiveness for an engaging online experience.</p>
+                <a href="webdesign.html">Learn More</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-crop"></i>
+                <h2>UI/UX Design</h2>
+                <p>UI/UX design optimizes digital experiences by creating visually appealing interfaces and enhancing the overall user journey. Designers use tools like wireframing to ensure both visual appeal and user-centric functionality.</p>
+                <a href="uiuxdesign.html">Learn More</a>
+            </div>
+            <div>
+                <i class="fa-regular fa-keyboard"></i>
+                <h2>Copywriting</h2>
+                <p>Copywriting is the strategic craft of creating compelling written content to influence action. It involves leveraging storytelling, creativity, and consumer psychology to drive engagement and inspire action.</p>
+                <a href="copywriting.html">Learn More</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- ------- Portfolio ------- -->
+
+<div id="portfolio">
+    <div class="container-portfolio">
+        <h1 data-aos="fade-right" data-aos-anchor-placement="top-center" data-aos-delay="200" class="sub-title">Talk is cheap, what<br>can I do?</h1>
+        <div class="work-list">
+            <div data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-delay="400" class="work">
+                <img src="img/ui-ux.jpg">
+                <div class="layer">
+                    <h3>My UI/UX design so far</h3>
+                    <p>Some of my designs so far using Figma and Adobe Photoshop, ranging from simple to complex are here. check to see more!</p>
+                    <a href="myuiuxdesign.html"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-delay="600" class="work">
+                <img src="img/web-code.jpg">
+                <div class="layer">
+                    <h3>Websites I've created</h3>
+                    <p>This website that I've created is also part of my college assignment. This is a record of my journey in making websites.</p>
+                    <a href="mywebdesign.html"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-delay="800" class="work">
+                <img src="img/cpw.jpg">
+                <div class="layer">
+                    <h3>Where have I made articles?</h3>
+                    <p>I create articles with my copywriting skills on an article sales website called Marker. Check it out!</p>
+                    <a href="mycopywriting.html"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- ------- Contact Me ------- -->
+
+<div id="contact">
+    <div class="contact-container">
+        <div class="contact-row">
+            <div class="contact-left">
+                <h1 data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-delay="100" class="sub-title">Contact Me</h1>
+                <p data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-delay="200"><i class="fa-solid fa-paper-plane"></i> fajarsigmachad@gmail.com</p>
+                <p data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-delay="300"><i class="fa-solid fa-phone"></i> +62 8262911284</p>
+                <div data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-delay="400" class="social-icon">
+                    <a href="https://www.instagram.com/fajarakurniadi?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/fajar-ahmad-kurniadi/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="mailto:fajarsigmachad@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+                    <a href="https://api.whatsapp.com/send?phone=088262911284"><i class="fa-brands fa-whatsapp"></i></a>
+                </div>
+                <div class="justfit" style="height: fit-content; width: fit-content;" data-aos="fade-up" data-aos-delay="5000">
+                    <p class="btn"><a href="CV FAJAR AHMAD KURNIADI.pdf" download>Get my CV</a></p>
+                </div>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-delay="100" type="text" name="Name" placeholder="Your Name" required>
+                    <input data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-delay="200" type="email" name="Email" placeholder="Your Email" required>
+                    <textarea data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-delay="300" name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <div class="justfit" style="height: fit-content; width: fit-content;" data-aos="fade-up" data-aos-delay="400">
+                        <button type="submit" class="submit-btn">Submit</button>
+                    </div>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- ------- Copyright ------- -->
+
+<div class="copyright">
+    <p data-aos="fade-down" data-aos-anchor-placement="top-bottom" data-aos-delay="200">Copyright © 2024 Fajar Ahmad Kurniadi.</p>
+</div>
+
+
+<!-- ------- JavaScript ------- -->
+
+
+<!-- ------- JavaScript for About Me ------- -->
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+
+
+<!-- ------- JavaScript for Hamburger ------- -->
+
+<script>
+
+    var sidebar = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidebar.style.right = "0";
+    }
+    function closemenu(){
+        sidebar.style.right = "-200px";
+    }
+
+</script>
+
+
+<!-- ------- JavaScript for Contact Form ------- -->
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbx1Xy-sEnA6MavexNKGmGgrFsbQRLYDToI7CD-vbfzlndAAbykFf2hMKmdx7roib3-14g/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully, Thank You!"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+</script>
+
+
+<!-- ------- Javascript for AOS Animations ------- -->
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
+    
+</body>
+</html>
